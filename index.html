@@ -78,34 +78,35 @@
       <div class="rate-card">
         <span class="rate-emoji">💪</span>
         <span class="rate-label">Push-Up</span>
-        <span class="rate-value">1 rep = 1🍌</span>
+        <span class="rate-value">1 rep</span>
       </div>
       <div class="rate-card">
         <span class="rate-emoji">🦵</span>
         <span class="rate-label">Squat</span>
-        <span class="rate-value">1 rep = 1🍌</span>
+        <span class="rate-value">1 rep</span>
       </div>
       <div class="rate-card">
         <span class="rate-emoji">🚶</span>
-        <span class="rate-label">Walk / Jog</span>
-        <span class="rate-value">100 steps = 1🍌</span>
+        <span class="rate-label">Steps</span>
+        <span class="rate-value">500 steps</span>
       </div>
       <div class="rate-card">
         <span class="rate-emoji">🧘</span>
         <span class="rate-label">Plank</span>
-        <span class="rate-value">15 sec = 1🍌</span>
+        <span class="rate-value">15 sec</span>
       </div>
       <div class="rate-card">
         <span class="rate-emoji">🏋️</span>
         <span class="rate-label">Sit-Up</span>
-        <span class="rate-value">1 rep = 1🍌</span>
+        <span class="rate-value">1 rep</span>
       </div>
       <div class="rate-card">
         <span class="rate-emoji">🪢</span>
         <span class="rate-label">Jump Rope</span>
-        <span class="rate-value">15 jumps = 1🍌</span>
+        <span class="rate-value">15 jumps</span>
       </div>
     </div>
+    <p class="rate-caption">Each activity unit earns 1🍌 — one minute of screen time.</p>
   </div>
 </section>
 
@@ -146,31 +147,55 @@
   </div>
 </section>
 
-<!-- ── Gamification ───────────────────────────────────────── -->
+<!-- ── Banana Clock ───────────────────────────────────────── -->
 <section class="dark">
   <div class="inner">
-    <h2 class="section-title">Built to Build Habits</h2>
-    <div class="gamif-grid">
-      <div class="gamif-card">
-        <span class="gamif-emoji">🐵</span>
-        <h4>10 Levels</h4>
-        <p>Start as a Baby Monkey. Work your way up to Banana God.</p>
-      </div>
-      <div class="gamif-card">
-        <span class="gamif-emoji">🌿</span>
-        <h4>Streak Tiers</h4>
-        <p>Seed → Sprout → Vine → Canopy → Ancient Tree → World Tree. Up to 2× XP at 30 days.</p>
-      </div>
-      <div class="gamif-card">
-        <span class="gamif-emoji">🏆</span>
-        <h4>25 Achievements</h4>
-        <p>Across fitness, brain games, screen time, streaks, and habit tracking.</p>
-      </div>
-      <div class="gamif-card">
-        <span class="gamif-emoji">📅</span>
-        <h4>Daily Quests</h4>
-        <p>Fresh quests every day. Complete all 4 for a bonus banana reward.</p>
-      </div>
+    <h2 class="section-title">Your Time, Earned</h2>
+    <div class="banana-clock-wrap">
+      <svg class="banana-clock" viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="bclockPeel" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFE366" />
+            <stop offset="100%" stop-color="#E8B83A" />
+          </linearGradient>
+          <linearGradient id="bclockShine" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF6B0" stop-opacity="0.85" />
+            <stop offset="100%" stop-color="#FFE366" stop-opacity="0" />
+          </linearGradient>
+          <filter id="bclockGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2.4" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- Banana body (curved) -->
+        <path d="M50 150 Q90 40 260 40 Q380 40 390 110 Q398 160 340 190 Q270 225 180 222 Q80 220 50 150 Z"
+              fill="url(#bclockPeel)" stroke="#8B6F1F" stroke-width="3" />
+        <!-- Banana tip top -->
+        <path d="M244 40 Q262 26 275 40 Q268 50 260 40 Z" fill="#6B4F14" />
+        <!-- Banana tip bottom -->
+        <path d="M58 152 Q46 168 58 180 Q70 172 68 162 Z" fill="#6B4F14" />
+        <!-- Peel highlight -->
+        <path d="M78 130 Q110 70 250 66 Q340 66 366 118" fill="none" stroke="url(#bclockShine)" stroke-width="10" stroke-linecap="round" />
+        <!-- LCD screen inset -->
+        <rect x="130" y="102" width="180" height="70" rx="10" fill="#1C1C1E" stroke="#3A9E6A" stroke-width="2" />
+        <!-- Digital time readout -->
+        <text x="220" y="156" text-anchor="middle"
+              font-family="'Courier New', 'Menlo', monospace"
+              font-size="42" font-weight="700" fill="#5EE8B0"
+              filter="url(#bclockGlow)"
+              letter-spacing="3">00:42</text>
+        <!-- MIN label -->
+        <text x="220" y="193" text-anchor="middle"
+              font-family="-apple-system, 'Helvetica Neue', sans-serif"
+              font-size="11" font-weight="600" fill="#8E8E93"
+              letter-spacing="3">MINUTES EARNED</text>
+      </svg>
+      <p class="banana-clock-caption">
+        Every rep, every step, every game — your balance ticks up. When it hits zero, the apps lock.
+      </p>
     </div>
   </div>
 </section>
