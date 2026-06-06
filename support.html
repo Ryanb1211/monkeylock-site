@@ -10,16 +10,17 @@
 </head>
 <body>
 
-<!-- ── Nav ───────────────────────────────────────────────── -->
+<!-- NAV -->
 <nav>
-  <a class="nav-logo" href="/">
-    <img src="icon.png" alt="" class="nav-logo-icon" />
-    MonkeyLock
-  </a>
-  <div class="nav-links">
-    <a href="/#how-it-works">How It Works</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="#" class="btn btn-primary">Coming Soon</a>
+  <div class="wrap row">
+    <a class="logo" href="/"><img src="icon.png" alt="" /> MonkeyLock</a>
+    <div class="nav-links">
+      <a href="/#how">How it works</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="btn" href="/#pricing">Start free trial</a>
+    </div>
   </div>
 </nav>
 
@@ -73,18 +74,30 @@
   <div class="faq-item">
     <h3>How do I earn bananas?</h3>
     <p>
-      Tap the Earn tab. You can do physical exercises (push-ups, squats, planks, sit-ups,
-      jump rope) or play brain games (Sudoku, Word Drip, Memory Match, Chess Puzzles,
-      Hangman, Reaction Time). Each banana equals 1 minute of screen time for your locked apps.
+      Tap the Earn tab. You can do camera-tracked exercises (push-ups, squats, lunges, sit-ups,
+      plank, jump rope), play brain games (Sudoku, Word Drip, Memory Match, Chess Puzzles,
+      Hangman, Reaction Time, Breakout), or capture an outdoor photo. Each banana equals
+      1 minute of screen time for your locked apps.
     </p>
   </div>
 
   <div class="faq-item">
     <h3>What is the camera verification bonus?</h3>
     <p>
-      When doing bodyweight exercises (push-ups, squats, sit-ups), you can enable camera
-      verification. MonkeyLock uses on-device pose detection to count your reps — no footage
-      is recorded or transmitted. Verified reps earn a 1.5× banana bonus.
+      All bodyweight exercises (push-ups, squats, lunges, sit-ups, plank, jump rope) are
+      tracked live by on-device pose detection — no footage is recorded or transmitted.
+      Verified reps earn a 1.5× banana bonus over the base rate. Apple Health workouts do
+      not auto-import — every workout has to be camera-tracked through the Earn tab.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How do outdoor photos earn bananas?</h3>
+    <p>
+      Snap a Live Photo of something outdoors — birds, blossoms, water, fruit, a beach scene,
+      tree shade — and you earn 3 bananas, with a bonus minute when the subject matches the
+      current season. Up to 5 photos a day. The photo's location is read locally to confirm
+      it was taken outside; nothing leaves your phone.
     </p>
   </div>
 
@@ -100,9 +113,9 @@
   <div class="faq-item">
     <h3>How does step counting work?</h3>
     <p>
-      MonkeyLock reads your step count from Apple Health in the background. Every 500 steps
-      earns 1 banana automatically. Grant HealthKit access during onboarding or via
-      iOS Settings → Privacy &amp; Security → Health → MonkeyLock.
+      MonkeyLock reads your step count from Apple Health in the background. Every 1,500 steps
+      earns 1 banana automatically. Grant HealthKit access during onboarding or via iOS Settings
+      → Privacy &amp; Security → Health → MonkeyLock.
     </p>
   </div>
 
@@ -151,8 +164,9 @@
     <h3>How do streaks work?</h3>
     <p>
       A streak day is counted when you earn at least 1 banana before midnight local time.
-      Streaks unlock XP multipliers: Seed (1×) → Sprout → Vine → Canopy → Ancient Tree →
-      World Tree 🌍 (2× XP at 30 days). Missing a day resets your streak to zero.
+      Streak tiers run Seed (1d) → Sprout (3d) → Vine (7d) → Canopy (14d) → Ancient Tree (30d) →
+      World Tree 🌍 (90d). XP multiplies 1.5× from 7 days and 2× from 30 days. Missing a day
+      resets your streak to zero.
     </p>
   </div>
 
@@ -178,7 +192,7 @@
   <div class="faq-item">
     <h3>How do I delete all my data?</h3>
     <p>
-      Go to Settings → Danger Zone → Reset All Data. This wipes your local app data
+      Go to Settings and tap "Clear all data" near the bottom. This wipes your local app data
       (balance, streaks, achievements, workout history). Deleting the app from your iPhone
       also removes all local data.
     </p>
@@ -186,14 +200,19 @@
 
 </div>
 
-<!-- ── Footer ─────────────────────────────────────────────── -->
+<!-- FOOTER -->
 <footer>
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="support.html">Support</a>
-    <a href="#">App Store</a>
+  <div class="wrap row">
+    <div class="logo"><img src="icon.png" alt="" /> MonkeyLock</div>
+    <div class="links">
+      <a href="/#how">How it works</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <div class="small">© 2026 MonkeyLock</div>
   </div>
-  <p class="copyright">© 2026 MonkeyLock. All rights reserved.</p>
 </footer>
 
 </body>
