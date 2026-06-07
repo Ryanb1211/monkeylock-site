@@ -1,249 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MonkeyLock — Earn Every Minute</title>
-  <meta name="description" content="MonkeyLock blocks your most distracting apps until you earn screen time through exercise and brain games. No willpower required." />
-  <meta property="og:title" content="MonkeyLock — Earn Every Minute" />
-  <meta property="og:description" content="Do a push-up. Earn a minute. Your apps unlock automatically when you earn enough bananas." />
-  <meta property="og:image" content="icon.png" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MonkeyLock — Defeat Monkey Brain</title>
+<meta name="description" content="Defeat Monkey Brain. Earn your screen time through exercise and brain games." />
+<meta property="og:title" content="MonkeyLock — Defeat Monkey Brain" />
+<meta property="og:description" content="Earn your screen time through exercise and brain games." />
+<meta property="og:image" content="icon.png" />
+<meta property="og:url" content="https://ryanb1211.github.io/monkeylock/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="MonkeyLock — Defeat Monkey Brain" />
+<meta name="twitter:description" content="Earn your screen time through exercise and brain games." />
+<meta name="twitter:image" content="icon.png" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ── Nav ───────────────────────────────────────────────── -->
+<!-- NAV -->
 <nav>
-  <a class="nav-logo" href="/">🐵 MonkeyLock</a>
-  <div class="nav-links">
-    <a href="#how-it-works">How It Works</a>
-    <a href="#earn">Earn</a>
-    <a href="#features">Features</a>
-    <a href="support.html">Support</a>
-    <a href="https://apps.apple.com/app/monkeylock/id0000000000" class="btn btn-primary">Download</a>
+  <div class="wrap row">
+    <a class="logo" href="#"><img src="icon.png" alt="" /> MonkeyLock</a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="support.html">Support</a>
+      <a class="btn" href="#pricing">Start free trial</a>
+    </div>
   </div>
 </nav>
 
-<!-- ── Hero ──────────────────────────────────────────────── -->
-<div class="hero">
-  <div class="hero-pixel-bg"></div>
-  <img src="icon.png" alt="MonkeyLock" class="hero-icon" />
-  <h1>EARN EVERY MINUTE. 🍌</h1>
-  <p>
-    MonkeyLock blocks your most distracting apps until you earn screen time
-    through exercise and brain games. No willpower required. No workarounds.
-    Real enforcement through Apple's Screen Time API.
-  </p>
-  <div class="hero-btns">
-    <a href="https://apps.apple.com/app/monkeylock/id0000000000" class="appstore-badge">
-      <span>🍎</span> Download on the App Store
-    </a>
-  </div>
-</div>
-
-<!-- ── How It Works ──────────────────────────────────────── -->
-<section id="how-it-works">
-  <h2 class="section-title">HOW IT WORKS</h2>
-  <div class="steps">
-    <div class="step-card">
-      <span class="step-num">STEP 01</span>
-      <span class="step-emoji">📱</span>
-      <h3>CHOOSE YOUR APPS</h3>
-      <p>Pick the apps you want to control — social media, games, whatever steals your time.</p>
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-inner">
+    <img class="hero-icon" src="icon.png" alt="MonkeyLock" />
+    <h1>Defeat <em>Monkey Brain.</em></h1>
+    <p>Earn your screen time through exercise and brain games.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#pricing">Start your 7-day free trial</a>
+      <a class="btn btn-ghost" href="#how">See how it works</a>
     </div>
-    <div class="step-card">
-      <span class="step-num">STEP 02</span>
-      <span class="step-emoji">💪</span>
-      <h3>EARN BANANAS</h3>
-      <p>Exercise or play brain games to earn bananas 🍌. Each banana = 1 minute of screen time.</p>
-    </div>
-    <div class="step-card">
-      <span class="step-num">STEP 03</span>
-      <span class="step-emoji">🔓</span>
-      <h3>APPS AUTO-UNLOCK</h3>
-      <p>Your selected apps unlock automatically when you have a balance. When it hits zero, they lock until you earn more.</p>
+    <div class="hero-sub">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Cancel anytime</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 7 days free</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> iPhone iOS 17+</span>
     </div>
   </div>
-</section>
+</header>
 
-<!-- ── Earn with your body ────────────────────────────────── -->
-<section class="dark" id="earn">
-  <div class="inner">
-    <h2 class="section-title">EARN WITH YOUR BODY</h2>
-    <div class="rate-grid">
-      <div class="rate-card">
-        <span class="rate-emoji">💪</span>
-        <span class="rate-label">Push-Up</span>
-        <span class="rate-value">1 rep = 1🍌</span>
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow">How it works</div>
+    <h2 class="section-title">Four ways to earn.</h2>
+    <p class="section-lede">Earn minutes through real effort. Open a blocked app and your balance drains in real time. Hit zero — the apps lock until you earn more.</p>
+
+    <div class="pillars pillars-4">
+      <div class="pillar">
+        <div class="step-num">01 — Body</div>
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h2"/><path d="M20 12h2"/><rect x="4" y="8" width="2" height="8" rx="0.5"/><rect x="18" y="8" width="2" height="8" rx="0.5"/><path d="M6 12h12"/><rect x="6" y="10" width="2" height="4" rx="0.4"/><rect x="16" y="10" width="2" height="4" rx="0.4"/></svg></div>
+        <h3>Camera-tracked exercise</h3>
+        <p>Push-ups, sit-ups, squats, lunges, jump rope. Tracked live as you move.</p>
+        <div class="rate-pill">0.75–1.25 min per rep, by effort</div>
       </div>
-      <div class="rate-card">
-        <span class="rate-emoji">🦵</span>
-        <span class="rate-label">Squat</span>
-        <span class="rate-value">1 rep = 1🍌</span>
+
+      <div class="pillar">
+        <div class="step-num">02 — Mind</div>
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3.5a2.5 2.5 0 015 0v0a2 2 0 012 2v0a2 2 0 011.5 2 2 2 0 01-1 4 2.5 2.5 0 01-2.5 2.5v3a2.5 2.5 0 01-5 0v-3a2.5 2.5 0 01-2.5-2.5 2 2 0 01-1-4 2 2 0 011.5-2v0a2 2 0 012-2v0z"/></svg></div>
+        <h3>Brain games</h3>
+        <p>Hangman, Sudoku, Chess Puzzles, Memory Match, Word Drip, Reaction Time, Breakout. Better play, more minutes.</p>
+        <div class="rate-pill">2–10 min per win</div>
       </div>
-      <div class="rate-card">
-        <span class="rate-emoji">🚶</span>
-        <span class="rate-label">Walk / Jog</span>
-        <span class="rate-value">100 steps = 1🍌</span>
+
+      <div class="pillar pillar-touchgrass">
+        <div class="step-num">03 — Steps</div>
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4l3 7-2 2 1 5-3 1-2-7 1-3z"/><path d="M16 6l-2 6 1 2-1 5 3 1 2-7-1-3z"/></svg></div>
+        <h3>Steps</h3>
+        <p>Apple Health steps auto-import in the background. Walk the dog, hit the trail, take the long way home.</p>
+        <div class="rate-pill">1 min per 250 steps</div>
       </div>
-      <div class="rate-card">
-        <span class="rate-emoji">🧘</span>
-        <span class="rate-label">Plank</span>
-        <span class="rate-value">15 sec = 1🍌</span>
-      </div>
-      <div class="rate-card">
-        <span class="rate-emoji">🏋️</span>
-        <span class="rate-label">Sit-Up</span>
-        <span class="rate-value">1 rep = 1🍌</span>
-      </div>
-      <div class="rate-card">
-        <span class="rate-emoji">🪢</span>
-        <span class="rate-label">Jump Rope</span>
-        <span class="rate-value">15 jumps = 1🍌</span>
+
+      <div class="pillar pillar-touchgrass">
+        <div class="step-num">04 — Photos</div>
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6.5" width="18" height="13" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6.5l1.5-2h5l1.5 2"/></svg></div>
+        <h3>Outdoor photos</h3>
+        <p>Snap a fresh Live Photo of birds, blossoms, water, or a beach. A subject that matches the season earns a bonus.</p>
+        <div class="rate-pill">4 min per photo · +2 in season · up to 8/day</div>
       </div>
     </div>
-    <div class="camera-bonus">
-      📷 Use camera verification for a 1.5× banana bonus on every rep
+
+    <div class="pillar-labels">
+      <div class="pillar-label pillar-label-body">Body · Sweat Drip Verification</div>
+      <div class="pillar-label pillar-label-mind">Mind · outwit Monkey Brain</div>
+      <div class="pillar-label pillar-label-touchgrass">Touch Grass · leave the four walls</div>
     </div>
   </div>
 </section>
 
-<!-- ── Brain Games ────────────────────────────────────────── -->
-<section id="brain-games">
-  <h2 class="section-title">EARN WITH YOUR MIND</h2>
-  <div class="games-grid">
-    <div class="game-card">
-      <span class="game-emoji">🔢</span>
-      <div class="game-info">
-        <h4>Sudoku</h4>
-        <span class="game-earn">Up to 7🍌 per win</span>
-      </div>
+<!-- SPLIT — Sweat Drip Verification -->
+<section style="background: var(--surface-warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="wrap split">
+    <div class="split-text">
+      <div class="eyebrow">Verification</div>
+      <h2>Sweat Drip<br/>Verification.</h2>
+      <p>Reads your skeleton 30 times a second, on-device. Bad form doesn&apos;t count — only clean reps earn minutes. Frames are processed and discarded as they come in. Nothing uploads, nothing stores, nothing trains.</p>
     </div>
-    <div class="game-card">
-      <span class="game-emoji">📝</span>
-      <div class="game-info">
-        <h4>Word Drip</h4>
-        <span class="game-earn">Up to 7🍌 per win</span>
-      </div>
-    </div>
-    <div class="game-card">
-      <span class="game-emoji">🃏</span>
-      <div class="game-info">
-        <h4>Memory Match</h4>
-        <span class="game-earn">Up to 5🍌 per win</span>
-      </div>
-    </div>
-    <div class="game-card">
-      <span class="game-emoji">♟️</span>
-      <div class="game-info">
-        <h4>Chess Puzzles</h4>
-        <span class="game-earn">Up to 5🍌 per win</span>
-      </div>
-    </div>
-    <div class="game-card">
-      <span class="game-emoji">🎯</span>
-      <div class="game-info">
-        <h4>Hangman</h4>
-        <span class="game-earn">Up to 4🍌 per win</span>
-      </div>
-    </div>
-    <div class="game-card">
-      <span class="game-emoji">⚡</span>
-      <div class="game-info">
-        <h4>Reaction Time</h4>
-        <span class="game-earn">Up to 4🍌 per win</span>
+    <div>
+      <!-- Animated v3 pose preview: live skeleton tracking a clean squat,
+           bones locked to joints, confidence-colored. Camera-feed background
+           (no stock photo). Driven by requestAnimationFrame below. -->
+      <div class="pose-mock pose-feed">
+        <div class="iphone-island"></div>
+        <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+        <div class="pose-rec-group"><span class="pose-rec"></span><span class="pose-rec-label">REC</span></div>
+        <div class="pose-status">POSE · 30 FPS</div>
+        <svg class="pose-overlay" id="pose-v3" viewBox="0 0 240 498" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="poseSilh" cx="50%" cy="40%" r="70%">
+              <stop offset="0%" stop-color="rgba(245,212,168,0.18)"/>
+              <stop offset="60%" stop-color="rgba(101,214,183,0.08)"/>
+              <stop offset="100%" stop-color="rgba(101,214,183,0.01)"/>
+            </radialGradient>
+          </defs>
+          <path class="pose-silhouette" fill="url(#poseSilh)" d="" />
+          <g class="pose-bones" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"></g>
+          <g class="pose-joints"></g>
+        </svg>
+        <div class="pose-tracking">TRACKING SQUAT · <span id="tracking-conf">70</span>%</div>
+        <div class="pose-form-cue" id="pose-form">Good depth ✓</div>
+        <div class="pose-scan-band"></div>
+        <div class="pose-scan-line"></div>
+        <div class="pose-rep-display">
+          <div class="rep-number" id="reps-counter">0</div>
+          <div class="rep-label">REPS</div>
+        </div>
+        <div class="pose-info-row">
+          <span class="pose-rec-button" aria-label="Recording active"></span>
+          <span class="pose-analyzing">ANALYZING</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Gamification ───────────────────────────────────────── -->
-<section class="dark">
-  <div class="inner">
-    <h2 class="section-title">DEEPLY GAMIFIED</h2>
-    <div class="gamif-grid">
-      <div class="gamif-card">
-        <span class="gamif-emoji">🐵</span>
-        <h4>10 LEVELS</h4>
-        <p>Start as a Baby Monkey. Work your way up to Banana God.</p>
+<!-- MIND GAMES SHOWCASE -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Brain workout</div>
+    <h2 class="section-title">Outwit Monkey Brain.</h2>
+    <p class="section-lede">Reaction, memory, logic, pattern recognition. Each tile tests a different cognitive skill, and performance translates directly to minutes earned.</p>
+
+    <!-- Fan: 7 phone screenshots arranged in a curved fan -->
+    <div class="games-fan">
+
+      <!-- REACTION TIME -->
+      <div class="fan-phone" data-pos="0">
+        <div class="game-phone">
+          <div class="gp-island"></div>
+          <span class="gp-time">9:41</span>
+          <div class="gp-status">
+            <svg viewBox="0 0 18 12" width="14" height="9"><rect x="0" y="8" width="2.4" height="4" rx="0.4"/><rect x="4" y="6" width="2.4" height="6" rx="0.4"/><rect x="8" y="3" width="2.4" height="9" rx="0.4"/><rect x="12" y="0" width="2.4" height="12" rx="0.4"/></svg>
+            <svg viewBox="0 0 24 14" width="20" height="10"><rect x="0.5" y="1" width="18" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"/><rect x="2" y="2.5" width="14" height="8" rx="1" fill="currentColor"/></svg>
+          </div>
+          <div class="gp-content">
+            <div class="gp-header">
+              <span class="gp-back">← Done</span>
+              <span class="gp-title">Reaction Time</span>
+              <span class="gp-action">Skip</span>
+            </div>
+            <div class="rt-area">
+              <div class="rt-circle"><span>TAP!</span></div>
+              <div class="rt-result">247<span class="rt-ms">ms</span></div>
+              <div class="rt-rounds">Round 2 of 3</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="gamif-card">
-        <span class="gamif-emoji">🌿</span>
-        <h4>STREAK TIERS</h4>
-        <p>Seed → Sprout → Vine → Canopy → Ancient Tree → World Tree. Up to 2× XP at 30 days.</p>
+
+      <!-- MEMORY MATCH -->
+      <div class="fan-phone" data-pos="1">
+        <div class="game-phone">
+          <div class="gp-island"></div>
+          <span class="gp-time">9:41</span>
+          <div class="gp-status">
+            <svg viewBox="0 0 18 12" width="14" height="9"><rect x="0" y="8" width="2.4" height="4" rx="0.4"/><rect x="4" y="6" width="2.4" height="6" rx="0.4"/><rect x="8" y="3" width="2.4" height="9" rx="0.4"/><rect x="12" y="0" width="2.4" height="12" rx="0.4"/></svg>
+            <svg viewBox="0 0 24 14" width="20" height="10"><rect x="0.5" y="1" width="18" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"/><rect x="2" y="2.5" width="14" height="8" rx="1" fill="currentColor"/></svg>
+          </div>
+          <div class="gp-content">
+            <div class="gp-header">
+              <span class="gp-back">← Done</span>
+              <span class="gp-title">Memory Match</span>
+              <span class="gp-action" style="color: var(--accent-deep);">8 moves</span>
+            </div>
+            <div class="mm-grid">
+              <div class="mm-cell matched">🐵</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell flipped">🍌</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell matched">🌴</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell flipped">🍌</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell matched">🐵</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell matched">🌴</div>
+              <div class="mm-cell">?</div>
+              <div class="mm-cell">?</div>
+            </div>
+            <div class="gp-status-text">2 of 10 pairs matched</div>
+          </div>
+        </div>
       </div>
-      <div class="gamif-card">
-        <span class="gamif-emoji">🏆</span>
-        <h4>25 ACHIEVEMENTS</h4>
-        <p>Across fitness, brain games, screen time, streaks, and habit tracking.</p>
+
+      <!-- HANGMAN -->
+      <div class="fan-phone" data-pos="2">
+        <div class="game-phone">
+          <div class="gp-island"></div>
+          <span class="gp-time">9:41</span>
+          <div class="gp-status">
+            <svg viewBox="0 0 18 12" width="14" height="9"><rect x="0" y="8" width="2.4" height="4" rx="0.4"/><rect x="4" y="6" width="2.4" height="6" rx="0.4"/><rect x="8" y="3" width="2.4" height="9" rx="0.4"/><rect x="12" y="0" width="2.4" height="12" rx="0.4"/></svg>
+            <svg viewBox="0 0 24 14" width="20" height="10"><rect x="0.5" y="1" width="18" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"/><rect x="2" y="2.5" width="14" height="8" rx="1" fill="currentColor"/></svg>
+          </div>
+          <div class="gp-content">
+            <div class="gp-header">
+              <span class="gp-back">← Done</span>
+              <span class="gp-title">Hangman</span>
+              <span class="gp-action">Skip</span>
+            </div>
+            <div class="hm-hint">"Built one day at a time"</div>
+            <div class="hm-art">
+              <svg viewBox="0 0 90 100" width="100%" height="100%">
+                <line x1="10" y1="95" x2="55" y2="95" stroke="#6B6376" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="20" y1="95" x2="20" y2="8" stroke="#6B6376" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="20" y1="8" x2="58" y2="8" stroke="#6B6376" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="58" y1="8" x2="58" y2="20" stroke="#6B6376" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="58" cy="28" r="7" stroke="#B85A5A" stroke-width="2.5" fill="none"/>
+                <line x1="58" y1="35" x2="58" y2="60" stroke="#B85A5A" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="58" y1="42" x2="49" y2="52" stroke="#B85A5A" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="hm-word">
+              <span class="hm-letter solved">D</span><span class="hm-letter solved">I</span><span class="hm-letter">_</span><span class="hm-letter solved">C</span><span class="hm-letter">_</span><span class="hm-letter">_</span><span class="hm-letter solved">L</span><span class="hm-letter solved">I</span><span class="hm-letter">_</span><span class="hm-letter solved">E</span>
+            </div>
+            <div class="hm-keys">
+              <span class="hm-key">A</span><span class="hm-key used">B</span><span class="hm-key correct">C</span><span class="hm-key correct">D</span><span class="hm-key correct">E</span><span class="hm-key">F</span><span class="hm-key used">G</span><span class="hm-key used">H</span><span class="hm-key correct">I</span><span class="hm-key">J</span><span class="hm-key">K</span><span class="hm-key correct">L</span><span class="hm-key">M</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="gamif-card">
-        <span class="gamif-emoji">📅</span>
-        <h4>DAILY QUESTS</h4>
-        <p>Fresh quests every day. Complete all 4 for a bonus banana reward.</p>
+
+      <!-- CHESS PUZZLES (CENTER) -->
+      <div class="fan-phone" data-pos="3">
+        <div class="game-phone">
+          <div class="gp-island"></div>
+          <span class="gp-time">9:41</span>
+          <div class="gp-status">
+            <svg viewBox="0 0 18 12" width="14" height="9"><rect x="0" y="8" width="2.4" height="4" rx="0.4"/><rect x="4" y="6" width="2.4" height="6" rx="0.4"/><rect x="8" y="3" width="2.4" height="9" rx="0.4"/><rect x="12" y="0" width="2.4" height="12" rx="0.4"/></svg>
+            <svg viewBox="0 0 24 14" width="20" height="10"><rect x="0.5" y="1" width="18" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"/><rect x="2" y="2.5" width="14" height="8" rx="1" fill="currentColor"/></svg>
+          </div>
+          <div class="gp-content">
+            <div class="gp-header">
+              <span class="gp-back">← Done</span>
+              <span class="gp-title">Chess Puzzles</span>
+              <span class="gp-action">Skip</span>
+            </div>
+            <div class="chess-meta-row">
+              <span class="pill">Mate in 1</span>
+              <span class="pill">⬜ White</span>
+            </div>
+            <div class="chess-board">
+              <div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light black-piece">♚</div><div class="chess-cell dark"></div>
+              <div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light black-piece">♟</div><div class="chess-cell dark black-piece">♟</div><div class="chess-cell light black-piece">♟</div>
+              <div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div>
+              <div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div>
+              <div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div>
+              <div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div>
+              <div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div>
+              <div class="chess-cell dark white-piece selected">♖</div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark"></div><div class="chess-cell light"></div><div class="chess-cell dark white-piece">♔</div><div class="chess-cell light"></div>
+            </div>
+            <div class="gp-status-text">Find the mate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUDOKU -->
+      <div class="fan-phone" data-pos="4">
+        <div class="game-phone">
+          <div class="gp-island"></div>
+          <span class="gp-time">9:41</span>
+          <div class="gp-status">
+            <svg viewBox="0 0 18 12" width="14" height="9"><rect x="0" y="8" width="2.4" height="4" rx="0.4"/><rect x="4" y="6" width="2.4" height="6" rx="0.4"/><rect x="8" y="3" width="2.4" height="9" rx="0.4"/><rect x="12" y="0" width="2.4" height="12" rx="0.4"/></svg>
+            <svg viewBox="0 0 24 14" width="20" height="10"><rect x="0.5" y="1" width="18" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"/><rect x="2" y="2.5" width="14" height="8" rx="1" fill="currentColor"/></svg>
+          </div>
+          <div class="gp-content">
+            <div class="gp-header">
+              <span class="gp-back">← Done</span>
+              <span class="gp-title">Sudoku</span>
+              <span class="gp-action" style="font-variant-numeric: tabular-nums;">2:14</span>
+            </div>
+            <div class="su-grid">
+              <div class="su-cell given">3</div><div class="su-cell"></div><div class="su-cell given border-r">5</div><div class="su-cell">2</div><div class="su-cell given"></div><div class="su-cell">6</div>
+              <div class="su-cell"></div><div class="su-cell given">6</div><div class="su-cell border-r border-b">2</div><div class="su-cell border-b given">1</div><div class="su-cell border-b">3</div><div class="su-cell border-b given">4</div>
+              <div class="su-cell given">2</div><div class="su-cell">5</div><div class="su-cell border-r">4</div><div class="su-cell"></div><div class="su-cell given">6</div><div class="su-cell"></div>
+              <div class="su-cell given border-b">6</div><div class="su-cell border-b">3</div><div class="su-cell border-r border-b">1</div><div class="su-cell border-b given">4</div><div class="su-cell border-b">2</div><div class="su-cell border-b">5</div>
+              <div class="su-cell"></div><div class="su-cell given">2</div><div class="su-cell border-r selected">3</div><div class="su-cell"></div><div class="su-cell">5</div><div class="su-cell given">1</div>
+              <div class="su-cell">5</div><div class="su-cell given">4</div><div class="su-cell border-r"></div><div class="su-cell given">3</div><div class="su-cell"></div><div class="su-cell">2</div>
+            </div>
+            <div class="su-pad">
+              <div class="su-num">1</div><div class="su-num">2</div><div class="su-num active">3</div><div class="su-num">4</div><div class="su-num">5</div><div class="su-num">6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WORD DRIP -->
+      <div class="fan-phone" data-pos="5">
+        <div class="game-phone">
+          <div class="gp-island"></div>
+          <span class="gp-time">9:41</span>
+          <div class="gp-status">
+            <svg viewBox="0 0 18 12" width="14" height="9"><rect x="0" y="8" width="2.4" height="4" rx="0.4"/><rect x="4" y="6" width="2.4" height="6" rx="0.4"/><rect x="8" y="3" width="2.4" height="9" rx="0.4"/><rect x="12" y="0" width="2.4" height="12" rx="0.4"/></svg>
+            <svg viewBox="0 0 24 14" width="20" height="10"><rect x="0.5" y="1" width="18" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"/><rect x="2" y="2.5" width="14" height="8" rx="1" fill="currentColor"/></svg>
+          </div>
+          <div class="gp-content">
+            <div class="gp-header">
+              <span class="gp-back">← Done</span>
+              <span class="gp-title">Word Drip</span>
+              <span style="width: 32px;"></span>
+            </div>
+            <div class="word-grid">
+              <div class="word-row">
+                <div class="word-cell absent">T</div><div class="word-cell absent">I</div><div class="word-cell absent">M</div><div class="word-cell present">E</div><div class="word-cell correct">R</div>
+              </div>
+              <div class="word-row">
+                <div class="word-cell absent">B</div><div class="word-cell present">R</div><div class="word-cell present">O</div><div class="word-cell correct">W</div><div class="word-cell absent">N</div>
+              </div>
+              <div class="word-row">
+                <div class="word-cell absent">C</div><div class="word-cell correct">O</div><div class="word-cell absent">V</div><div class="word-cell correct">E</div><div class="word-cell correct">R</div>
+              </div>
+              <div class="word-row">
+                <div class="word-cell typing">P</div><div class="word-cell typing">O</div><div class="word-cell typing">W</div><div class="word-cell typing">E</div><div class="word-cell"></div>
+              </div>
+              <div class="word-row">
+                <div class="word-cell"></div><div class="word-cell"></div><div class="word-cell"></div><div class="word-cell"></div><div class="word-cell"></div>
+              </div>
+              <div class="word-row">
+                <div class="word-cell"></div><div class="word-cell"></div><div class="word-cell"></div><div class="word-cell"></div><div class="word-cell"></div>
+              </div>
+            </div>
+            <div class="word-keyboard">
+              <div class="word-keyboard-row">
+                <span class="word-key">Q</span><span class="word-key correct">W</span><span class="word-key correct">E</span><span class="word-key correct">R</span><span class="word-key absent">T</span><span class="word-key">Y</span><span class="word-key">U</span><span class="word-key absent">I</span><span class="word-key correct">O</span><span class="word-key">P</span>
+              </div>
+              <div class="word-keyboard-row" style="padding: 0 9px;">
+                <span class="word-key">A</span><span class="word-key">S</span><span class="word-key">D</span><span class="word-key">F</span><span class="word-key">G</span><span class="word-key">H</span><span class="word-key">J</span><span class="word-key">K</span><span class="word-key">L</span>
+              </div>
+              <div class="word-keyboard-row">
+                <span class="word-key wide">↵</span><span class="word-key">Z</span><span class="word-key">X</span><span class="word-key absent">C</span><span class="word-key absent">V</span><span class="word-key absent">B</span><span class="word-key absent">N</span><span class="word-key absent">M</span><span class="word-key wide">⌫</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BREAKOUT -->
+      <div class="fan-phone" data-pos="6">
+        <div class="game-phone">
+          <div class="gp-island"></div>
+          <span class="gp-time">9:41</span>
+          <div class="gp-status">
+            <svg viewBox="0 0 18 12" width="14" height="9"><rect x="0" y="8" width="2.4" height="4" rx="0.4"/><rect x="4" y="6" width="2.4" height="6" rx="0.4"/><rect x="8" y="3" width="2.4" height="9" rx="0.4"/><rect x="12" y="0" width="2.4" height="12" rx="0.4"/></svg>
+            <svg viewBox="0 0 24 14" width="20" height="10"><rect x="0.5" y="1" width="18" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"/><rect x="2" y="2.5" width="14" height="8" rx="1" fill="currentColor"/></svg>
+          </div>
+          <div class="gp-content">
+            <div class="gp-header">
+              <span class="gp-back">← Done</span>
+              <span class="gp-title">Breakout</span>
+              <span class="gp-action" style="color: var(--accent-deep); font-variant-numeric: tabular-nums;">160</span>
+            </div>
+            <div class="brick-area">
+              <div class="brick-grid">
+                <div class="brick" style="background:#FF6B6B;"></div><div class="brick" style="background:#FF6B6B;"></div><div class="brick" style="background:#FF6B6B;"></div><div class="brick" style="background:#FF6B6B;"></div><div class="brick" style="background:#FF6B6B;"></div><div class="brick" style="background:#FF6B6B;"></div><div class="brick" style="background:#FF6B6B;"></div>
+              </div>
+              <div class="brick-grid">
+                <div class="brick" style="background:#FFA06B;"></div><div class="brick" style="background:#FFA06B;"></div><div class="brick" style="background:#FFA06B;"></div><div class="brick dead"></div><div class="brick" style="background:#FFA06B;"></div><div class="brick" style="background:#FFA06B;"></div><div class="brick" style="background:#FFA06B;"></div>
+              </div>
+              <div class="brick-grid">
+                <div class="brick" style="background:#FFD93D;"></div><div class="brick dead"></div><div class="brick" style="background:#FFD93D;"></div><div class="brick dead"></div><div class="brick" style="background:#FFD93D;"></div><div class="brick dead"></div><div class="brick" style="background:#FFD93D;"></div>
+              </div>
+              <div class="brick-grid">
+                <div class="brick dead"></div><div class="brick" style="background:#6BCB77;"></div><div class="brick dead"></div><div class="brick dead"></div><div class="brick dead"></div><div class="brick" style="background:#6BCB77;"></div><div class="brick dead"></div>
+              </div>
+              <div class="brick-grid">
+                <div class="brick dead"></div><div class="brick dead"></div><div class="brick dead"></div><div class="brick dead"></div><div class="brick dead"></div><div class="brick dead"></div><div class="brick dead"></div>
+              </div>
+              <div class="brick-ball"></div>
+              <div class="brick-paddle"></div>
+            </div>
+            <div class="gp-status-text">Drag to move</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="games-fan-legend">7 games · 2–10🍌 per win · daily limits keep it fair</p>
+  </div>
+</section>
+
+<!-- OUTDOOR PHOTOS SHOWCASE -->
+<section style="background: var(--surface-warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="wrap split">
+    <div class="split-text">
+      <div class="eyebrow">Get outside</div>
+      <h2>Real photos.<br/>Real proof.</h2>
+      <p>Snap a fresh Live Photo outside — a bird, a blossom, the water. MonkeyLock confirms it's a real, just-taken moment with genuine motion, checked privately on your phone, and matches the subject to the season for a bonus. Recycled snaps and stock don't pass.</p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px;">
+        <span class="rate-pill">Spring · birds, blossoms</span>
+        <span class="rate-pill">Summer · water, beach</span>
+        <span class="rate-pill">Fall · foliage, harvest</span>
+        <span class="rate-pill">Winter · snow, evergreens</span>
+      </div>
+    </div>
+    <div style="position: relative; height: 380px; display: flex; align-items: center; justify-content: center;">
+      <!-- Photo card 1: bird (back-left) -->
+      <div style="position: absolute; transform: rotate(-8deg) translate(-72px, 14px); width: 200px; background: white; border-radius: 14px; padding: 10px 10px 16px; box-shadow: 0 18px 44px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.04); z-index: 1;">
+        <div style="position: relative; width: 100%; aspect-ratio: 4 / 5; border-radius: 8px; overflow: hidden; background: #1a1a1a;">
+          <img src="photos/bird.jpg" alt="Spring bird" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+          <div style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.45); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 100px; padding: 3px 8px 3px 6px; display: inline-flex; align-items: center; gap: 4px; font-size: 9px; font-weight: 700; color: white; letter-spacing: 0.5px;">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="12" r="7.5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="11" fill="none" stroke="white" stroke-width="1" stroke-dasharray="2 2"/></svg>
+            LIVE
+          </div>
+          <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(94,232,176,0.95); border-radius: 100px; padding: 3px 9px 3px 6px; display: inline-flex; align-items: center; gap: 3px; font-size: 9px; font-weight: 800; color: #0A2E20; letter-spacing: 0.6px;">
+            <svg width="11" height="11" viewBox="0 0 16 16" fill="#0A2E20"><path d="M6 11L3 8l1.2-1.2L6 8.6 11.8 2.8 13 4z"/></svg>
+            VERIFIED
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding: 0 4px;">
+          <div style="font-size: 11px; font-weight: 700; color: var(--text); letter-spacing: 0.3px;">Spring · Bird</div>
+          <div style="font-size: 10px; font-weight: 700; color: var(--accent-deep); letter-spacing: 0.4px;">+4m</div>
+        </div>
+      </div>
+      <!-- Photo card 2: blossom (front-center) -->
+      <div style="position: absolute; transform: rotate(2deg); width: 200px; background: white; border-radius: 14px; padding: 10px 10px 16px; box-shadow: 0 22px 50px rgba(0,0,0,0.22), 0 0 0 1px rgba(0,0,0,0.04); z-index: 3;">
+        <div style="position: relative; width: 100%; aspect-ratio: 4 / 5; border-radius: 8px; overflow: hidden; background: #1a1a1a;">
+          <img src="photos/blossom.jpg" alt="Cherry blossom" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+          <div style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.45); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 100px; padding: 3px 8px 3px 6px; display: inline-flex; align-items: center; gap: 4px; font-size: 9px; font-weight: 700; color: white; letter-spacing: 0.5px;">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="12" r="7.5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="11" fill="none" stroke="white" stroke-width="1" stroke-dasharray="2 2"/></svg>
+            LIVE
+          </div>
+          <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(94,232,176,0.95); border-radius: 100px; padding: 3px 9px 3px 6px; display: inline-flex; align-items: center; gap: 3px; font-size: 9px; font-weight: 800; color: #0A2E20; letter-spacing: 0.6px;">
+            <svg width="11" height="11" viewBox="0 0 16 16" fill="#0A2E20"><path d="M6 11L3 8l1.2-1.2L6 8.6 11.8 2.8 13 4z"/></svg>
+            VERIFIED
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding: 0 4px;">
+          <div style="font-size: 11px; font-weight: 700; color: var(--text); letter-spacing: 0.3px;">Spring · Blossom</div>
+          <div style="font-size: 10px; font-weight: 700; color: var(--accent-deep); letter-spacing: 0.4px;">+6m</div>
+        </div>
+      </div>
+      <!-- Photo card 3: beach (back-right) -->
+      <div style="position: absolute; transform: rotate(10deg) translate(72px, 6px); width: 200px; background: white; border-radius: 14px; padding: 10px 10px 16px; box-shadow: 0 18px 44px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.04); z-index: 2;">
+        <div style="position: relative; width: 100%; aspect-ratio: 4 / 5; border-radius: 8px; overflow: hidden; background: #1a1a1a;">
+          <img src="photos/beach.jpg" alt="Summer beach" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+          <div style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.45); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 100px; padding: 3px 8px 3px 6px; display: inline-flex; align-items: center; gap: 4px; font-size: 9px; font-weight: 700; color: white; letter-spacing: 0.5px;">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="12" r="7.5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="11" fill="none" stroke="white" stroke-width="1" stroke-dasharray="2 2"/></svg>
+            LIVE
+          </div>
+          <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(94,232,176,0.95); border-radius: 100px; padding: 3px 9px 3px 6px; display: inline-flex; align-items: center; gap: 3px; font-size: 9px; font-weight: 800; color: #0A2E20; letter-spacing: 0.6px;">
+            <svg width="11" height="11" viewBox="0 0 16 16" fill="#0A2E20"><path d="M6 11L3 8l1.2-1.2L6 8.6 11.8 2.8 13 4z"/></svg>
+            VERIFIED
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding: 0 4px;">
+          <div style="font-size: 11px; font-weight: 700; color: var(--text); letter-spacing: 0.3px;">Summer · Beach</div>
+          <div style="font-size: 10px; font-weight: 700; color: var(--accent-deep); letter-spacing: 0.4px;">+6m</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Features ───────────────────────────────────────────── -->
-<section id="features">
-  <h2 class="section-title">KEY FEATURES</h2>
-  <div class="features-list">
-    <div class="feature-item">
-      <span class="feat-icon">🔒</span>
-      <span>Automatic app blocking via Screen Time — no workarounds</span>
+<!-- PRIVACY -->
+<section id="privacy" class="privacy-light">
+  <div class="wrap">
+    <div class="lock-disc">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="11" rx="2"/><path d="M8 10.5V7.5a4 4 0 018 0v3"/><circle cx="12" cy="16" r="1.5" fill="currentColor"/></svg>
     </div>
-    <div class="feature-item">
-      <span class="feat-icon">💪</span>
-      <span>8 exercise types + custom exercises</span>
+    <div class="eyebrow">Privacy</div>
+    <h2>Private by default.</h2>
+    <p class="lede">No accounts. No analytics. No data leaving your phone. The whole product runs on-device.</p>
+    <ul>
+      <li>
+        <strong>Camera stays on-device</strong>
+        <span>Pose detection runs on your iPhone — no frames uploaded.</span>
+      </li>
+      <li>
+        <strong>Photos checked locally</strong>
+        <span>Outdoor checks happen on your device. We never see your camera roll.</span>
+      </li>
+      <li>
+        <strong>No accounts, no tracking</strong>
+        <span>No login, no analytics, no third-party trackers.</span>
+      </li>
+      <li>
+        <strong>Profile data syncs via iCloud</strong>
+        <span>Your Apple ID, never to our servers.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="padding-top: 110px;">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:48px;">
+      <div class="eyebrow">Pricing</div>
+      <h2 class="section-title" style="margin: 0 auto;">7-Day Free Trial.</h2>
+      <p class="section-lede" style="margin: 18px auto 0;">Full access. Cancel anytime in Settings.</p>
     </div>
-    <div class="feature-item">
-      <span class="feat-icon">🧠</span>
-      <span>6 brain games with performance-based rewards</span>
-    </div>
-    <div class="feature-item">
-      <span class="feat-icon">❤️</span>
-      <span>Apple Health integration for passive earning</span>
-    </div>
-    <div class="feature-item">
-      <span class="feat-icon">📷</span>
-      <span>Camera-verified exercise with 1.5× bonus</span>
-    </div>
-    <div class="feature-item">
-      <span class="feat-icon">🌿</span>
-      <span>Habit tracking with streak counters</span>
-    </div>
-    <div class="feature-item">
-      <span class="feat-icon">🎯</span>
-      <span>Daily quests, weekly challenges, 25 achievements</span>
-    </div>
-    <div class="feature-item">
-      <span class="feat-icon">🔐</span>
-      <span>Privacy-first — all data stays on your device</span>
+
+    <div class="pricing">
+      <div class="pricing-inner">
+        <span class="badge-trial">★ 7-DAY FREE TRIAL</span>
+        <div class="price">$64.99<span class="per">/year</span></div>
+        <div class="equiv">that's $5.42 / month — billed annually after trial</div>
+        <ul class="pricing-features">
+          <li>Camera-tracked exercises</li>
+          <li>7 brain games</li>
+          <li>Apple Health steps auto-import</li>
+          <li>Outdoor photo bonuses</li>
+          <li>Daily quests &amp; streaks</li>
+          <li>Habit tracking + check-ins</li>
+          <li>Daily +5 &ldquo;earn more time&rdquo; bonus</li>
+          <li>iCloud sync</li>
+          <li>4 themes (light + dark)</li>
+          <li>Lock Now + custom earn rates</li>
+        </ul>
+        <!-- TODO: swap href to the real TestFlight public link once available
+             (https://testflight.apple.com/join/XXXXXXXX, 8-char code; cap testers
+             at 10 in ASC → TestFlight → External Group → Public Link). For now this
+             scrolls to pricing so there's no dead link on the live site. -->
+        <a class="btn" href="#pricing" style="font-size:15px;padding:14px 28px;">Start your free trial</a>
+        <p class="micro">Cancel at least 24 hours before trial ends to avoid charge. Auto-renews unless canceled. Manage in Settings &gt; Apple ID &gt; Subscriptions.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ── CTA ────────────────────────────────────────────────── -->
-<div class="cta-section">
-  <h2>STOP SCROLLING.<br/>START EARNING.</h2>
-  <p>Your body gets stronger. Your mind gets sharper.<br/>Your screen time gets healthier.</p>
-  <a href="https://apps.apple.com/app/monkeylock/id0000000000" class="appstore-badge">
-    <span>🍎</span> Download on the App Store
-  </a>
-</div>
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2 class="section-title">The honest answers.</h2>
 
-<!-- ── Footer ─────────────────────────────────────────────── -->
+    <div class="faq" style="margin-top:32px;">
+      <div class="faq-item open">
+        <div class="faq-q">Will it actually block my apps? <span class="arrow">+</span></div>
+        <div class="faq-a">Yes. MonkeyLock uses Apple&apos;s Screen Time API — the same enforcement Apple uses for parental controls. Selected apps are locked when your daily balance hits zero and unlocked as you earn more. There&apos;s no in-app override or workaround.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How much screen time do I start with each day? <span class="arrow">+</span></div>
+        <div class="faq-a">In default mode, each day starts with a portion of your chosen daily goal — personalized from your onboarding answers, then you earn the rest through exercise, brain games, steps, or photos. In No Bananas mode (opt-in for the hardcore), you start at 0 and earn every minute, but at 1.5× the normal rate.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens when my balance hits zero? <span class="arrow">+</span></div>
+        <div class="faq-a">Selected apps shield immediately. Tapping a blocked app shows the MonkeyLock shield with a button to earn more. No grace period, no &quot;just one more minute.&quot; Earn through exercise, a brain game, steps, or an outdoor photo to unlock.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does the camera record me? <span class="arrow">+</span></div>
+        <div class="faq-a">No. Sweat Drip Verification runs entirely on-device. Frames are processed and discarded as they come in — nothing is recorded, nothing is uploaded, nothing trains a model.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if I&apos;m injured or can&apos;t exercise? <span class="arrow">+</span></div>
+        <div class="faq-a">Brain games, Apple Health steps, and outdoor photos all cover non-exercise paths. Brain games alone can earn up to 90 minutes a day by default (you can tune the cap in Settings), and steps + photos add more on top — no exercise required.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why no monthly plan or lifetime option? <span class="arrow">+</span></div>
+        <div class="faq-a">Behavior change happens over months. Annual fits the product. We&apos;d rather ship one honest plan than three competing tiers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How does the 7-day free trial work? Can I cancel? <span class="arrow">+</span></div>
+        <div class="faq-a">Yes. Sign up, get full access for 7 days, cancel any time before the trial ends from Settings &gt; Apple ID &gt; Subscriptions and you won&apos;t be charged. After the trial, your card is charged the annual rate; you can cancel future renewals at any time but past charges aren&apos;t refundable through us — Apple handles refund requests directly.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Will my data sync across devices? <span class="arrow">+</span></div>
+        <div class="faq-a">Yes. Profile data syncs to iCloud — workouts, brain games, habits, streaks, and settings. New device, same Apple ID, your progress restores. Never to our servers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can a kid or teen use this? <span class="arrow">+</span></div>
+        <div class="faq-a">MonkeyLock is rated 4+ but designed for self-directed adults working on their own habits. The Screen Time API requires the device&apos;s primary Apple ID; if you&apos;re managing a child&apos;s device through Family Sharing, Apple&apos;s built-in Screen Time controls are the better tool.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I just delete the app to bypass the block? <span class="arrow">+</span></div>
+        <div class="faq-a">You could. But if you&apos;re reading this question, you already know that defeats the point. The lock only works if you commit to it. We trust you to be honest with yourself — that&apos;s the whole product.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="support.html">Support</a>
-    <a href="https://apps.apple.com/app/monkeylock/id0000000000">App Store</a>
+  <div class="wrap row">
+    <div class="logo"><img src="icon.png" alt="" /> MonkeyLock</div>
+    <div class="links">
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <div class="small">© 2026 MonkeyLock</div>
   </div>
-  <p class="copyright">© 2026 MonkeyLock. All rights reserved.</p>
 </footer>
+
+<script>
+  document.querySelectorAll('.faq > .faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => item.classList.toggle('open'));
+  });
+  // (Pose-mock animation now lives in the dedicated v3 script below.)
+</script>
+
+<!-- Animated v3 pose preview (clean squat, bones locked to joints) -->
+<script>
+(function(){
+  var svg=document.getElementById('pose-v3'); if(!svg) return;
+  var rig=svg.querySelector('.pose-bones'), jg=svg.querySelector('.pose-joints'), silh=svg.querySelector('.pose-silhouette');
+  var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // viewBox is 240x498; place a centered squat rig in roughly the upper-middle.
+  var STAND={head:[120,150],neck:[120,168],mSh:[120,196],lSh:[94,196],rSh:[146,196],lEl:[84,238],rEl:[156,238],lWr:[80,278],rWr:[160,278],lHp:[102,292],rHp:[138,292],lKn:[100,366],rKn:[140,366],lAn:[98,448],rAn:[142,448]};
+  var DEEP ={head:[120,206],neck:[120,220],mSh:[120,242],lSh:[94,242],rSh:[146,242],lEl:[92,238],rEl:[148,238],lWr:[104,218],rWr:[136,218],lHp:[102,344],rHp:[138,344],lKn:[90,386],rKn:[150,386],lAn:[98,448],rAn:[142,448]};
+  var CONF={head:.98,neck:.97,mSh:.97,lSh:.95,rSh:.95,lEl:.82,rEl:.82,lWr:.66,rWr:.66,lHp:.94,rHp:.94,lKn:.86,rKn:.86,lAn:.74,rAn:.74};
+  var BONES=[['lSh','rSh'],['neck','mSh'],['lSh','lEl'],['lEl','lWr'],['rSh','rEl'],['rEl','rWr'],['lSh','lHp'],['rSh','rHp'],['lHp','rHp'],['lHp','lKn'],['lKn','lAn'],['rHp','rKn'],['rKn','rAn']];
+  var keys=Object.keys(STAND), NS='http://www.w3.org/2000/svg';
+  function cc(c){return c>=.85?'#7CEAC9':c>=.7?'#E8C45A':'#E89B5A';}
+  var bE=BONES.map(function(p){var l=document.createElementNS(NS,'line');l.dataset.a=p[0];l.dataset.b=p[1];l.setAttribute('stroke',cc(Math.min(CONF[p[0]],CONF[p[1]])));rig.appendChild(l);return l;});
+  var circ={};
+  keys.forEach(function(k){var r=k==='head'?7:(k==='neck'||k==='mSh'?0:4);if(r<=0)return;
+    var h=document.createElementNS(NS,'circle');h.setAttribute('r',r+3);h.setAttribute('fill',cc(CONF[k]));h.setAttribute('opacity','.22');jg.appendChild(h);
+    var j=document.createElementNS(NS,'circle');j.setAttribute('r',r);j.setAttribute('fill','#0c1f1a');j.setAttribute('stroke',cc(CONF[k]));j.setAttribute('stroke-width','2');jg.appendChild(j);circ[k]=[h,j];});
+  function lerp(a,b,t){return a+(b-a)*t;} function sm(t){return t*t*t*(t*(t*6-15)+10);}
+  function sp(P){return 'M'+P.head[0]+' '+(P.head[1]-14)+' Q'+(P.rSh[0]+22)+' '+P.rSh[1]+' '+(P.rHp[0]+20)+' '+P.rHp[1]+' L'+(P.rAn[0]+14)+' '+(P.rAn[1]+10)+' L'+(P.lAn[0]-14)+' '+(P.lAn[1]+10)+' L'+(P.lHp[0]-20)+' '+P.lHp[1]+' Q'+(P.lSh[0]-22)+' '+P.lSh[1]+' '+P.head[0]+' '+(P.head[1]-14)+' Z';}
+  function setPose(d, ts){
+    var P={};
+    keys.forEach(function(k){var jx=prefersReduced?0:Math.sin(ts/120+k.length)*.35,jy=prefersReduced?0:Math.cos(ts/100+k.charCodeAt(0))*.35;
+      P[k]=[lerp(STAND[k][0],DEEP[k][0],d)+jx,lerp(STAND[k][1],DEEP[k][1],d)+jy];
+      if(circ[k]){circ[k][0].setAttribute('cx',P[k][0]);circ[k][0].setAttribute('cy',P[k][1]);circ[k][1].setAttribute('cx',P[k][0]);circ[k][1].setAttribute('cy',P[k][1]);}});
+    bE.forEach(function(b){var a=P[b.dataset.a],c=P[b.dataset.b];b.setAttribute('x1',a[0]);b.setAttribute('y1',a[1]);b.setAttribute('x2',c[0]);b.setAttribute('y2',c[1]);});
+    silh.setAttribute('d',sp(P));
+  }
+  var repsEl=document.getElementById('reps-counter'), cfEl=document.getElementById('tracking-conf'), formEl=document.getElementById('pose-form');
+  var FORMS=['Good depth ✓','Knees over toes ✓','Chest up ✓','Drive through heels ✓'];
+  if(prefersReduced){ setPose(0,0); if(cfEl)cfEl.textContent='96'; return; }
+  var reps=0,last=0,t0=null;
+  function frame(ts){
+    if(t0==null)t0=ts; var el=ts-t0; var p=(ts%3000)/3000, d;
+    if(p<.40)d=sm(p/.40); else if(p<.52)d=1; else if(p<.92)d=1-sm((p-.52)/.40); else d=0;
+    setPose(d,ts);
+    if(d>0.85&&last<=0.85){reps++; if(repsEl){repsEl.textContent=reps;repsEl.classList.remove('rep-pop');void repsEl.offsetWidth;repsEl.classList.add('rep-pop');} if(formEl)formEl.textContent=FORMS[reps%FORMS.length];}
+    last=d;
+    if(cfEl)cfEl.textContent= el<1100?70+Math.round(el/1100*26):95+Math.round(d*3);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
 
 </body>
 </html>
