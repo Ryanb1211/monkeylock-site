@@ -14,7 +14,7 @@
 <meta name="twitter:title" content="MonkeyLock — Defeat Monkey Brain" />
 <meta name="twitter:description" content="Earn your screen time through exercise and brain games." />
 <meta name="twitter:image" content="icon.png" />
-<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="icon.png" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -29,7 +29,7 @@
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
       <a href="support.html">Support</a>
-      <a class="btn" href="#pricing">Start free trial</a>
+      <a class="btn" href="https://apps.apple.com/us/app/monkeylock-app-blocker/id6761743000">Download</a>
     </div>
   </div>
 </nav>
@@ -41,12 +41,12 @@
     <h1>Defeat <em>Monkey Brain.</em></h1>
     <p>Earn your screen time through exercise and brain games.</p>
     <div class="hero-cta">
-      <a class="btn" href="#pricing">Start your 7-day free trial</a>
+      <a class="appstore-badge" href="https://apps.apple.com/us/app/monkeylock-app-blocker/id6761743000" aria-label="Download MonkeyLock on the App Store"><svg width="180" height="60" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" role="img"><rect width="120" height="40" rx="8" fill="#000"/><rect x="0.5" y="0.5" width="119" height="39" rx="7.5" fill="none" stroke="#a6a6a6"/><path fill="#fff" d="M24.77 20.3a4.95 4.95 0 0 1 2.36-4.15 5.07 5.07 0 0 0-3.99-2.16c-1.68-.18-3.3 1-4.16 1s-2.19-.98-3.61-.95a5.32 5.32 0 0 0-4.47 2.73c-1.93 3.34-.49 8.27 1.36 10.98.93 1.33 2.01 2.81 3.43 2.76 1.39-.06 1.9-.89 3.58-.89s2.14.89 3.59.86c1.49-.03 2.43-1.34 3.32-2.68a11 11 0 0 0 1.52-3.09 4.78 4.78 0 0 1-2.93-4.41zM22 12.21a4.87 4.87 0 0 0 1.11-3.49 4.96 4.96 0 0 0-3.21 1.66 4.63 4.63 0 0 0-1.14 3.36A4.1 4.1 0 0 0 22 12.21z"/><text x="36" y="17" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="9" fill="#fff">Download on the</text><text x="36" y="30" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#fff">App Store</text></svg></a>
       <a class="btn btn-ghost" href="#how">See how it works</a>
     </div>
     <div class="hero-sub">
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Cancel anytime</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 7 days free</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 3 days free</span>
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> iPhone iOS 17+</span>
     </div>
   </div>
@@ -110,38 +110,11 @@
       <p>Reads your skeleton 30 times a second, on-device. Bad form doesn&apos;t count — only clean reps earn minutes. Frames are processed and discarded as they come in. Nothing uploads, nothing stores, nothing trains.</p>
     </div>
     <div>
-      <!-- Animated v3 pose preview: live skeleton tracking a clean squat,
-           bones locked to joints, confidence-colored. Camera-feed background
-           (no stock photo). Driven by requestAnimationFrame below. -->
-      <div class="pose-mock pose-feed">
-        <div class="iphone-island"></div>
-        <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
-        <div class="pose-rec-group"><span class="pose-rec"></span><span class="pose-rec-label">REC</span></div>
-        <div class="pose-status">POSE · 30 FPS</div>
-        <svg class="pose-overlay" id="pose-v3" viewBox="0 0 240 498" preserveAspectRatio="xMidYMid meet">
-          <defs>
-            <radialGradient id="poseSilh" cx="50%" cy="40%" r="70%">
-              <stop offset="0%" stop-color="rgba(245,212,168,0.18)"/>
-              <stop offset="60%" stop-color="rgba(101,214,183,0.08)"/>
-              <stop offset="100%" stop-color="rgba(101,214,183,0.01)"/>
-            </radialGradient>
-          </defs>
-          <path class="pose-silhouette" fill="url(#poseSilh)" d="" />
-          <g class="pose-bones" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"></g>
-          <g class="pose-joints"></g>
-        </svg>
-        <div class="pose-tracking">TRACKING SQUAT · <span id="tracking-conf">70</span>%</div>
-        <div class="pose-form-cue" id="pose-form">Good depth ✓</div>
-        <div class="pose-scan-band"></div>
-        <div class="pose-scan-line"></div>
-        <div class="pose-rep-display">
-          <div class="rep-number" id="reps-counter">0</div>
-          <div class="rep-label">REPS</div>
-        </div>
-        <div class="pose-info-row">
-          <span class="pose-rec-button" aria-label="Recording active"></span>
-          <span class="pose-analyzing">ANALYZING</span>
-        </div>
+      <!-- Real captured footage: live camera-tracked push-ups with the actual
+           in-app skeleton overlay + rep counter (not a synthetic mock). GIF
+           autoplays/loops natively — no <video> needed. -->
+      <div class="pose-video-frame">
+        <img class="pose-video" src="pushup-verification.gif" alt="Live camera-tracked push-up rep counting with skeleton overlay" />
       </div>
     </div>
   </div>
@@ -527,35 +500,47 @@
   <div class="wrap">
     <div style="text-align:center;margin-bottom:48px;">
       <div class="eyebrow">Pricing</div>
-      <h2 class="section-title" style="margin: 0 auto;">7-Day Free Trial.</h2>
-      <p class="section-lede" style="margin: 18px auto 0;">Full access. Cancel anytime in Settings.</p>
+      <h2 class="section-title" style="margin: 0 auto;">Pick your plan.</h2>
+      <p class="section-lede" style="margin: 18px auto 0;">Full access on every plan. Cancel anytime in Settings.</p>
     </div>
 
-    <div class="pricing">
-      <div class="pricing-inner">
-        <span class="badge-trial">★ 7-DAY FREE TRIAL</span>
-        <div class="price">$64.99<span class="per">/year</span></div>
-        <div class="equiv">that's $5.42 / month — billed annually after trial</div>
-        <ul class="pricing-features">
-          <li>Camera-tracked exercises</li>
-          <li>7 brain games</li>
-          <li>Apple Health steps auto-import</li>
-          <li>Outdoor photo bonuses</li>
-          <li>Daily quests &amp; streaks</li>
-          <li>Habit tracking + check-ins</li>
-          <li>Daily +5 &ldquo;earn more time&rdquo; bonus</li>
-          <li>iCloud sync</li>
-          <li>4 themes (light + dark)</li>
-          <li>Lock Now + custom earn rates</li>
-        </ul>
-        <!-- TODO: swap href to the real TestFlight public link once available
-             (https://testflight.apple.com/join/XXXXXXXX, 8-char code; cap testers
-             at 10 in ASC → TestFlight → External Group → Public Link). For now this
-             scrolls to pricing so there's no dead link on the live site. -->
-        <a class="btn" href="#pricing" style="font-size:15px;padding:14px 28px;">Start your free trial</a>
-        <p class="micro">Cancel at least 24 hours before trial ends to avoid charge. Auto-renews unless canceled. Manage in Settings &gt; Apple ID &gt; Subscriptions.</p>
+    <div class="pricing-grid">
+      <div class="pricing-card featured">
+        <span class="badge-trial">★ 3-DAY FREE TRIAL</span>
+        <div class="plan-name">Weekly</div>
+        <div class="price">$4.99<span class="per">/week</span></div>
+        <div class="equiv">3 days free, then billed weekly</div>
+        <a class="btn" href="https://apps.apple.com/us/app/monkeylock-app-blocker/id6761743000">Download on the App Store</a>
+      </div>
+      <div class="pricing-card">
+        <span class="plan-badge">SAVE ~69%</span>
+        <div class="plan-name">Annual</div>
+        <div class="price">$79.99<span class="per">/year</span></div>
+        <div class="equiv">about $7 / month — billed annually</div>
+        <a class="btn btn-ghost" href="https://apps.apple.com/us/app/monkeylock-app-blocker/id6761743000">Subscribe</a>
+      </div>
+      <div class="pricing-card">
+        <span class="plan-badge">OWN IT FOREVER</span>
+        <div class="plan-name">Lifetime</div>
+        <div class="price">$199<span class="per">one-time</span></div>
+        <div class="equiv">Pay once. About 2.5 years of Annual.</div>
+        <a class="btn btn-ghost" href="https://apps.apple.com/us/app/monkeylock-app-blocker/id6761743000">Buy Lifetime</a>
       </div>
     </div>
+
+    <ul class="pricing-features">
+      <li>Camera-tracked exercises + voice trainer</li>
+      <li>7 brain games + daily Brain Plan</li>
+      <li>Apple Health steps auto-import</li>
+      <li>Outdoor photo bonuses</li>
+      <li>XP, 30 ranks, daily quests &amp; streaks</li>
+      <li>Weekly Sunday recap + progress reports</li>
+      <li>Raise-your-max progression</li>
+      <li>iCloud sync</li>
+      <li>4 themes (light + dark)</li>
+      <li>Lock Now, No Bananas mode, custom earn rates</li>
+    </ul>
+    <p class="pricing-micro">Weekly: 3 days free, then $4.99/week — cancel at least 24 hours before the trial ends to avoid charge. Annual and Lifetime have no trial. Subscriptions auto-renew unless canceled; Lifetime is a one-time purchase. Manage subscriptions in Settings &gt; Apple ID &gt; Subscriptions.</p>
   </div>
 </section>
 
@@ -587,12 +572,12 @@
         <div class="faq-a">Brain games, Apple Health steps, and outdoor photos all cover non-exercise paths. Brain games alone can earn up to 90 minutes a day by default (you can tune the cap in Settings), and steps + photos add more on top — no exercise required.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Why no monthly plan or lifetime option? <span class="arrow">+</span></div>
-        <div class="faq-a">Behavior change happens over months. Annual fits the product. We&apos;d rather ship one honest plan than three competing tiers.</div>
+        <div class="faq-q">Why three plans instead of one? <span class="arrow">+</span></div>
+        <div class="faq-a">Everyone&apos;s commitment level is different. Weekly is the low-risk way to try it. Annual is the best value if you&apos;re in for the long haul. Lifetime is for people who never want to think about a subscription again. Pick what fits — no forced upsells.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How does the 7-day free trial work? Can I cancel? <span class="arrow">+</span></div>
-        <div class="faq-a">Yes. Sign up, get full access for 7 days, cancel any time before the trial ends from Settings &gt; Apple ID &gt; Subscriptions and you won&apos;t be charged. After the trial, your card is charged the annual rate; you can cancel future renewals at any time but past charges aren&apos;t refundable through us — Apple handles refund requests directly.</div>
+        <div class="faq-q">How does the 3-day free trial work? Can I cancel? <span class="arrow">+</span></div>
+        <div class="faq-a">Yes. The Weekly plan includes a 3-day free trial — sign up, get full access, cancel any time before the trial ends from Settings &gt; Apple ID &gt; Subscriptions and you won&apos;t be charged. After the trial, your card is charged the weekly rate; you can cancel future renewals at any time but past charges aren&apos;t refundable through us — Apple handles refund requests directly. Annual and Lifetime don&apos;t include a trial — Lifetime is a one-time purchase with no subscription at all.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Will my data sync across devices? <span class="arrow">+</span></div>
@@ -629,52 +614,6 @@
   document.querySelectorAll('.faq > .faq-item').forEach(item => {
     item.querySelector('.faq-q').addEventListener('click', () => item.classList.toggle('open'));
   });
-  // (Pose-mock animation now lives in the dedicated v3 script below.)
-</script>
-
-<!-- Animated v3 pose preview (clean squat, bones locked to joints) -->
-<script>
-(function(){
-  var svg=document.getElementById('pose-v3'); if(!svg) return;
-  var rig=svg.querySelector('.pose-bones'), jg=svg.querySelector('.pose-joints'), silh=svg.querySelector('.pose-silhouette');
-  var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // viewBox is 240x498; place a centered squat rig in roughly the upper-middle.
-  var STAND={head:[120,150],neck:[120,168],mSh:[120,196],lSh:[94,196],rSh:[146,196],lEl:[84,238],rEl:[156,238],lWr:[80,278],rWr:[160,278],lHp:[102,292],rHp:[138,292],lKn:[100,366],rKn:[140,366],lAn:[98,448],rAn:[142,448]};
-  var DEEP ={head:[120,206],neck:[120,220],mSh:[120,242],lSh:[94,242],rSh:[146,242],lEl:[92,238],rEl:[148,238],lWr:[104,218],rWr:[136,218],lHp:[102,344],rHp:[138,344],lKn:[90,386],rKn:[150,386],lAn:[98,448],rAn:[142,448]};
-  var CONF={head:.98,neck:.97,mSh:.97,lSh:.95,rSh:.95,lEl:.82,rEl:.82,lWr:.66,rWr:.66,lHp:.94,rHp:.94,lKn:.86,rKn:.86,lAn:.74,rAn:.74};
-  var BONES=[['lSh','rSh'],['neck','mSh'],['lSh','lEl'],['lEl','lWr'],['rSh','rEl'],['rEl','rWr'],['lSh','lHp'],['rSh','rHp'],['lHp','rHp'],['lHp','lKn'],['lKn','lAn'],['rHp','rKn'],['rKn','rAn']];
-  var keys=Object.keys(STAND), NS='http://www.w3.org/2000/svg';
-  function cc(c){return c>=.85?'#7CEAC9':c>=.7?'#E8C45A':'#E89B5A';}
-  var bE=BONES.map(function(p){var l=document.createElementNS(NS,'line');l.dataset.a=p[0];l.dataset.b=p[1];l.setAttribute('stroke',cc(Math.min(CONF[p[0]],CONF[p[1]])));rig.appendChild(l);return l;});
-  var circ={};
-  keys.forEach(function(k){var r=k==='head'?7:(k==='neck'||k==='mSh'?0:4);if(r<=0)return;
-    var h=document.createElementNS(NS,'circle');h.setAttribute('r',r+3);h.setAttribute('fill',cc(CONF[k]));h.setAttribute('opacity','.22');jg.appendChild(h);
-    var j=document.createElementNS(NS,'circle');j.setAttribute('r',r);j.setAttribute('fill','#0c1f1a');j.setAttribute('stroke',cc(CONF[k]));j.setAttribute('stroke-width','2');jg.appendChild(j);circ[k]=[h,j];});
-  function lerp(a,b,t){return a+(b-a)*t;} function sm(t){return t*t*t*(t*(t*6-15)+10);}
-  function sp(P){return 'M'+P.head[0]+' '+(P.head[1]-14)+' Q'+(P.rSh[0]+22)+' '+P.rSh[1]+' '+(P.rHp[0]+20)+' '+P.rHp[1]+' L'+(P.rAn[0]+14)+' '+(P.rAn[1]+10)+' L'+(P.lAn[0]-14)+' '+(P.lAn[1]+10)+' L'+(P.lHp[0]-20)+' '+P.lHp[1]+' Q'+(P.lSh[0]-22)+' '+P.lSh[1]+' '+P.head[0]+' '+(P.head[1]-14)+' Z';}
-  function setPose(d, ts){
-    var P={};
-    keys.forEach(function(k){var jx=prefersReduced?0:Math.sin(ts/120+k.length)*.35,jy=prefersReduced?0:Math.cos(ts/100+k.charCodeAt(0))*.35;
-      P[k]=[lerp(STAND[k][0],DEEP[k][0],d)+jx,lerp(STAND[k][1],DEEP[k][1],d)+jy];
-      if(circ[k]){circ[k][0].setAttribute('cx',P[k][0]);circ[k][0].setAttribute('cy',P[k][1]);circ[k][1].setAttribute('cx',P[k][0]);circ[k][1].setAttribute('cy',P[k][1]);}});
-    bE.forEach(function(b){var a=P[b.dataset.a],c=P[b.dataset.b];b.setAttribute('x1',a[0]);b.setAttribute('y1',a[1]);b.setAttribute('x2',c[0]);b.setAttribute('y2',c[1]);});
-    silh.setAttribute('d',sp(P));
-  }
-  var repsEl=document.getElementById('reps-counter'), cfEl=document.getElementById('tracking-conf'), formEl=document.getElementById('pose-form');
-  var FORMS=['Good depth ✓','Knees over toes ✓','Chest up ✓','Drive through heels ✓'];
-  if(prefersReduced){ setPose(0,0); if(cfEl)cfEl.textContent='96'; return; }
-  var reps=0,last=0,t0=null;
-  function frame(ts){
-    if(t0==null)t0=ts; var el=ts-t0; var p=(ts%3000)/3000, d;
-    if(p<.40)d=sm(p/.40); else if(p<.52)d=1; else if(p<.92)d=1-sm((p-.52)/.40); else d=0;
-    setPose(d,ts);
-    if(d>0.85&&last<=0.85){reps++; if(repsEl){repsEl.textContent=reps;repsEl.classList.remove('rep-pop');void repsEl.offsetWidth;repsEl.classList.add('rep-pop');} if(formEl)formEl.textContent=FORMS[reps%FORMS.length];}
-    last=d;
-    if(cfEl)cfEl.textContent= el<1100?70+Math.round(el/1100*26):95+Math.round(d*3);
-    requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-})();
 </script>
 
 </body>

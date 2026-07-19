@@ -3,21 +3,21 @@
   --page: #F4F0E8;
   --surface: #FCFAF5;
   --surface-warm: #F8F4EB;
-  --text: #2A2335;
-  --text-mid: #6B6376;
-  --text-faint: #A39FA8;
+  --text: #1C1B18;
+  --text-mid: #6E6A61;
+  --text-faint: #A5A093;
   --border: #E1DDD5;
   --border-strong: #CDC8BE;
   --divider: #ECE8DF;
-  --accent: #4FB89E;
-  --accent-hover: #5BC2A8;
-  --accent-deep: #2D8B72;
-  --accent-faint: #D5EAE0;
-  --secondary: #6B4F90;
-  --secondary-soft: #C5B5DD;
-  --secondary-faint: #EAE2F4;
+  --accent: #37A34A;
+  --accent-hover: #3FB454;
+  --accent-deep: #2C7F3B;
+  --accent-faint: #DFF0E2;
+  --secondary: #3D7BE8;
+  --secondary-soft: #B9CDF5;
+  --secondary-faint: #E7EEFB;
   --success: #16A34A;
-  --danger: #B85A5A;
+  --danger: #E4463C;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: var(--page); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -87,7 +87,7 @@ section { padding: 90px 0; }
 .split-text p { font-size: 16px; color: var(--text-mid); line-height: 1.6; margin: 0 0 24px; }
 
 /* === Pose-detection viewfinder mock — phone-shaped, matches squat video aspect === */
-.pose-mock { width: 280px; margin: 0 auto; height: 498px; border-radius: 44px; background: radial-gradient(ellipse at 50% 30%, #14201C 0%, #0A0F0D 60%), linear-gradient(180deg, #0A0F0D 0%, #060908 100%); position: relative; overflow: hidden; border: 2.5px solid #2a2a2d; box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04); font-family: 'SF Mono', monospace; }
+.pose-mock { width: 280px; margin: 0 auto; height: 573px; border-radius: 44px; background: radial-gradient(ellipse at 50% 30%, #14201C 0%, #0A0F0D 60%), linear-gradient(180deg, #0A0F0D 0%, #060908 100%); position: relative; overflow: hidden; border: 2.5px solid #2a2a2d; box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04); font-family: 'SF Mono', monospace; }
 .pose-mock .iphone-island { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 100px; height: 24px; background: #000; border-radius: 12px; z-index: 5; box-shadow: inset 0 1px 1px rgba(0,0,0,0.6); }
 .pose-mock .corner { position: absolute; width: 16px; height: 16px; border-color: rgba(125, 208, 182, 0.4); }
 .pose-mock .corner.tl { top: 14px; left: 14px; border-top: 2px solid; border-left: 2px solid; border-top-left-radius: 4px; }
@@ -126,6 +126,13 @@ section { padding: 90px 0; }
 .pose-mock .pose-rep-display .rep-number { font-family: ui-monospace, 'SF Mono', monospace; font-size: 88px; font-weight: 900; color: #fff; line-height: 0.95; letter-spacing: -3px; text-shadow: 0 2px 14px rgba(0,0,0,0.6), 0 0 28px rgba(101,214,183,0.18); transition: transform 120ms ease-out; }
 .pose-mock .pose-rep-display .rep-number.pulse { animation: rep-pulse 360ms ease-out; }
 .pose-mock .pose-rep-display .rep-label { margin-top: 2px; font-size: 11px; color: #65D6B7; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; }
+
+/* Real screen-recorded footage (already contains the app's own UI chrome —
+   status bar, rep counter, skeleton overlay — so no synthetic mock elements
+   are layered on top, unlike .pose-mock above). Same phone-bezel treatment
+   for visual consistency with the rest of the page. */
+.pose-video-frame { width: 280px; margin: 0 auto; height: 498px; border-radius: 44px; overflow: hidden; position: relative; background: #000; border: 2.5px solid #2a2a2d; box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04); }
+.pose-video-frame .pose-video { width: 100%; height: 100%; object-fit: cover; display: block; }
 @keyframes rep-pulse {
   0% { transform: scale(1); }
   35% { transform: scale(1.18); }
@@ -263,17 +270,21 @@ section { padding: 90px 0; }
 .privacy-light li span { display: block; font-weight: 500; color: var(--text-mid); font-size: 13px; line-height: 1.45; }
 
 /* === PRICING === */
-.pricing { background: var(--surface-warm); border: 1px solid var(--border); border-radius: 28px; padding: 52px 60px; text-align: center; max-width: 640px; margin: 0 auto; box-shadow: 0 24px 60px rgba(107, 79, 144, 0.10); position: relative; overflow: hidden; }
-.pricing::before { content: ''; position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, var(--accent-faint) 0%, transparent 60%); pointer-events: none; }
-.pricing-inner { position: relative; }
-.pricing .badge-trial { display: inline-block; padding: 6px 14px; background: var(--accent); color: #fff; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.6px; margin-bottom: 20px; }
-.pricing .price { font-size: 64px; font-weight: 800; letter-spacing: -2px; line-height: 1; margin: 0 0 12px; font-variant-numeric: tabular-nums; }
-.pricing .price .per { font-size: 17px; color: var(--text-mid); font-weight: 600; letter-spacing: 0; margin-left: 4px; }
-.pricing .equiv { font-size: 14px; color: var(--text-mid); margin-bottom: 32px; }
-.pricing-features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 460px; margin: 0 auto 36px; text-align: left; padding: 0; list-style: none; }
+.pricing-grid { display: flex; gap: 24px; justify-content: center; align-items: stretch; flex-wrap: wrap; max-width: 980px; margin: 0 auto; }
+.pricing-card { background: var(--surface-warm); border: 1px solid var(--border); border-radius: 24px; padding: 36px 28px; text-align: center; flex: 1 1 260px; max-width: 300px; box-shadow: 0 16px 40px rgba(107, 79, 144, 0.08); position: relative; overflow: hidden; display: flex; flex-direction: column; }
+.pricing-card.featured { border: 2px solid var(--accent); box-shadow: 0 24px 60px rgba(79, 184, 158, 0.22); transform: translateY(-8px); }
+.pricing-card.featured::before { content: ''; position: absolute; top: -80px; right: -80px; width: 260px; height: 260px; background: radial-gradient(circle, var(--accent-faint) 0%, transparent 60%); pointer-events: none; }
+.pricing-card .badge-trial { display: inline-block; padding: 6px 14px; background: var(--accent); color: #fff; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.6px; margin-bottom: 16px; align-self: center; }
+.pricing-card .plan-badge { display: inline-block; padding: 6px 14px; background: var(--secondary-faint); color: var(--secondary); border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.6px; margin-bottom: 16px; align-self: center; }
+.pricing-card .plan-name { font-size: 14px; font-weight: 700; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
+.pricing-card .price { font-size: 40px; font-weight: 800; letter-spacing: -1px; line-height: 1; margin: 0 0 10px; font-variant-numeric: tabular-nums; }
+.pricing-card .price .per { font-size: 14px; color: var(--text-mid); font-weight: 600; letter-spacing: 0; margin-left: 4px; }
+.pricing-card .equiv { font-size: 13px; color: var(--text-mid); margin-bottom: 24px; min-height: 34px; }
+.pricing-card .btn { width: 100%; justify-content: center; margin-top: auto; }
+.pricing-features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 460px; margin: 48px auto 0; text-align: left; padding: 0; list-style: none; }
 .pricing-features li { font-size: 14px; padding-left: 26px; position: relative; color: var(--text); }
 .pricing-features li::before { content: ''; position: absolute; left: 0; top: 4px; width: 16px; height: 16px; background: var(--accent-faint); border-radius: 50%; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232D8B72'><path d='M6 11L3 8l1-1 2 2 5-5 1 1z'/></svg>"); background-size: contain; background-position: center; background-repeat: no-repeat; }
-.pricing .micro { font-size: 12px; color: var(--text-faint); margin-top: 18px; line-height: 1.5; }
+.pricing-micro { font-size: 12px; color: var(--text-faint); margin-top: 24px; line-height: 1.5; text-align: center; max-width: 640px; margin-left: auto; margin-right: auto; }
 
 /* === FAQ (landing page accordion) === */
 .faq { max-width: 720px; margin: 0 auto; }
@@ -325,7 +336,8 @@ footer .small { font-size: 12px; color: var(--text-faint); }
   .split { grid-template-columns: 1fr; gap: 40px; }
   .nav-links { gap: 16px; }
   .nav-links a:not(.btn) { display: none; }
-  .pricing { padding: 36px 28px; }
+  .pricing-card { padding: 28px 22px; max-width: 400px; }
+  .pricing-card.featured { transform: none; }
   .pricing-features { grid-template-columns: 1fr; }
   .section-title { font-size: 32px; }
   .page-content { padding: 40px 22px; }
@@ -342,3 +354,6 @@ footer .small { font-size: 12px; color: var(--text-faint); }
 .pose-mock .pose-form-cue { position: absolute; top: 30%; left: 50%; transform: translateX(-50%); z-index: 4; font-size: 11px; font-weight: 600; color: #9BF5D8; white-space: nowrap; text-shadow: 0 1px 4px rgba(0,0,0,0.7); transition: opacity .3s; }
 .rep-number.rep-pop { animation: rep-pop .35s ease; }
 @keyframes rep-pop { 0%{transform:scale(1);} 40%{transform:scale(1.5);color:#fff;} 100%{transform:scale(1);} }
+
+.appstore-badge { display: inline-block; line-height: 0; border-radius: 8px; transition: transform 0.15s ease, opacity 0.15s ease; }
+.appstore-badge:hover { transform: scale(1.03); opacity: 0.92; }
